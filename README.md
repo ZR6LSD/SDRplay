@@ -1,15 +1,14 @@
-# SDRplay - Software-defined radio (SDR)
+# SDRplay - Software-defined radio (SDR) Headless Linux Server
 ZR6LSD's Automatic SDRplay installation script for a headless linux server
 
 These are my own custom modified installation scripts to download and install RSPTCP Server.
 
-Especially if you are using a RSP1...
-You will need to blacklist the kernel drivers before anything will work.
+You will need to blacklist the kernel drivers before anything will work. Especially if you are using a RSP1...
 The way to do it on Ubuntu is to add the following lines to the ```/etc/modprobe.d/blacklist.conf``` file
  
-blacklist sdr_msi3101
-blacklist msi001
-blacklist msi2500
+``` blacklist sdr_msi3101 ```
+``` blacklist msi001 ```
+``` blacklist msi2500 ```
 
 My script will download the RSPTCP Server and the needed API and all other required dependencies and files.
 My script also creates a systemd auto run file at boot.
