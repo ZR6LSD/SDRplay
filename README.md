@@ -4,11 +4,11 @@ ZR6LSD's Automatic SDRplay installation script for a headless linux server
 These are my own custom modified installation scripts to download and install RSPTCP Server.
 
 You will need to blacklist the kernel drivers before anything will work. Especially if you are using a RSP1...
-The way to do it on Ubuntu is to add the following lines to the ```/etc/modprobe.d/blacklist.conf``` file
+The way to do it on Ubuntu is to add the following lines to the ```sudo nano /etc/modprobe.d/blacklist.conf``` file
  
-``` blacklist sdr_msi3101 ```
-``` blacklist msi001 ```
-``` blacklist msi2500 ```
+1. ``` blacklist sdr_msi3101 ```
+2. ``` blacklist msi001 ```
+3. ``` blacklist msi2500 ```
 
 My script will download the RSPTCP Server and the needed API and all other required dependencies and files.
 My script also creates a systemd auto run file at boot.
