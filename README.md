@@ -10,9 +10,9 @@ The way to do it on Ubuntu is to add the following lines to the ```sudo nano /et
 2. ``` blacklist msi001 ```
 3. ``` blacklist msi2500 ```
 
-My script will download the RSPTCP Server and the needed API and all other required dependencies and files.
-My script also creates a systemd auto run file at boot.
-My script needs to be run with sudo.
+- My script will download the RSPTCP Server and the needed API and all other required dependencies and files.
+- My script also creates a systemd auto run file at boot.
+- My script needs to be run with sudo.
 
 # To use the Installation Script.
 
